@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, ClockIcon, UsersIcon, WrenchIcon } from '@heroicons/react/24/outline';
 
+// Track information page for New England Sand Drags
 export default function TrackPage() {
   return (
     <div className="min-h-screen bg-gray-50">
