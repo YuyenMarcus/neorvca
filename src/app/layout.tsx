@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
-import React from "react";
-import { Navigation } from "@/components/layout/Navigation";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "New England Sand Drags",
-  description: "Experience the thrill of sand drag racing in New England",
+  description: "Premier sand drag racing facility in New England. Experience the thrill of high-speed racing on our world-class track.",
 };
 
 export default function RootLayout({
@@ -20,10 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>
+        <div className="min-h-screen flex flex-col">
           <Navigation />
-          {children}
-        </Providers>
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
