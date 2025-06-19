@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import { Input, TextArea, Button } from "@/components/ui/Form";
 import { CalendarIcon, PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
