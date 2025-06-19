@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // serverActions is now enabled by default in Next.js 14
 }
 
 module.exports = nextConfig 
